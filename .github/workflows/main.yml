@@ -1,23 +1,23 @@
 name: CI
-​
+
 on:
   push:
-    branches:
-    - main
-​
+    branches:
+      - master
+
 jobs:
   run-tests:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [16]
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          registry-url: https://registry.npmjs.org
-      - name: Install dependencies 📦️
-        run: npm install
-      - name: test
-        run: npm run test:coverage
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          registry-url: https://registry.npmjs.org
+      - name: Install dependencies 📦️
+        run: npm install
+      - name: test
+        run: npm run test:coverage
