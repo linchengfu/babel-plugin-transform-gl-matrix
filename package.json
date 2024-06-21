@@ -1,4 +1,12 @@
 {
+  "name": "babel-plugin-transform-gl-matrix",
+  "version": "1.0.0",
+  "directories": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "scripts": {
     "test": "jest --coverage"
   },
