@@ -7,3 +7,6 @@ export function foo(a, b) {
     return -10;
   }
 }
+export function add(a, b) {
+  return a + b
+}
